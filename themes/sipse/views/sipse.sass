@@ -1,0 +1,228 @@
+@import blueprint
+@import compass/css3/gradient
+@import compass/css3/box-shadow
+@import compass/typography/lists/horizontal-list
+@import compass/css3/inline-block
+@import compass/utilities/links
+@import compass/utilities/lists
+
+$color-background: #0017B8
+$color-container: white
+$menubackgroundcolor: white
+$menutextcolor: blue
+$menuhovercolor: grey
+
+html
+  // height: 100%
+
+body
+  background-image: url(/attachments/back.png)
+  background-repeat: repeat
+
+body.bp
+
+  #container
+    //+showgrid
+    background-color: $color-container
+    //height: 100%
+
+  #header
+    background-image: url(/attachments/colorh.jpg)
+    background-repeat: repeat
+
+  #header-left
+    +column(14)
+    padding-top: 40px
+
+  #header-center
+    +column(4)
+
+  #header-right
+    text-align: right
+    padding-top: 40px
+    +column(3)
+    +last
+
+  .menu
+    border: none
+    border: 0px
+    margin: 0px
+    padding: 0px
+    font-family: verdana,geneva,arial,helvetica,sans-serif
+    font-size: 14px
+    font-weight: bold
+    color: 8e8e8e
+    ul
+      background: url(/attachments/menu/menu-bg.gif) top left repeat-x
+      height: 43px
+      list-style: none
+      margin: 0
+      padding: 0px
+    li
+      float: left
+      padding: 0px 8px 0px 8px
+      a
+        color: #666666
+        display: block
+        font-weight: bold
+        line-height: 43px
+        padding: 0px 25px
+        text-align: center
+        text-decoration: none
+        &:hover
+          color: #000000
+          text-decoration: none
+      ul
+        background: #e0e0e0
+        border-left: 2px solid #0079b2
+        border-right: 2px solid #0079b2
+        border-bottom: 2px solid #0079b2
+        display: none
+        height: auto
+        filter: alpha(opacity = 95)
+        opacity: 0.95
+        position: absolute
+        width: 225px
+        z-index: 200
+        /*top:1em;
+         */*left:0;
+      &:hover ul
+        display: block
+      li
+        display: block
+        float: none
+        padding: 0px
+        width: 225px
+      ul a
+        display: block
+        font-size: 12px
+        font-style: normal
+        padding: 0px 10px 0px 15px
+        text-align: left
+        &:hover
+          background: #949494
+          color: #000000
+          opacity: 1.0
+          filter: alpha(opacity = 100)
+    p
+      clear: left
+    #current
+      background: url(/attachments/menu/current-bg.gif) top left repeat-x
+      color: #ffffff
+
+  #uno
+    padding: 20px 10px
+    +column(8)
+
+  #dos
+    font-family: 'Amaranth', arial, serif
+    font-size: 150%
+    color: red
+    text-align: center
+    padding: 40px  
+    +column(8, true)
+
+  #tres
+    font-family: 'Amaranth', arial, serif
+    font-size: 150%
+    color: red
+    text-align: right
+    padding: 40px  
+    +column(8, true)
+    
+
+  #cuatro
+    font-family: 'Amaranth', arial, serif
+    font-size: 150%
+    color: red
+    text-align: right
+    padding: 40px  
+    +column(8, true)  
+    
+
+  body.bp a 
+    text-decoration: none 
+
+  .conformes
+    font-family: 'Amaranth', arial, serif
+    font-size: 200%
+    color: #95a1b0
+    text-align: left
+    padding-left: 10px
+    
+    
+  #tit
+    +column(16)
+    +last
+    font-family: 'Amaranth', arial, serif
+    font-size: 200%
+    text-align: left
+    padding: 35px 10px 10px 40px
+    text-shadow: 1pt 1pt 3pt grey
+
+  #subtit
+    +column(16)
+    +last
+    font-family: 'Amaranth', arial, serif
+    font-size: 150%
+    text-align: left
+    padding: 10px 10px 10px 40px
+    text-shadow: 1pt 1pt 3pt grey
+
+  #parrafo
+    +column(16)
+    +last
+    font-family: 'Amaranth', arial, serif
+    font-size: 140%
+    padding: 15px 15px 15px 40px
+    text-align: justify
+
+  #parrafoh
+    +column(4.2)
+    +last
+    font-family: 'Amaranth', arial, serif
+    font-size: 140%
+    padding: 15px 15px 15px 40px
+    text-align: left
+
+  
+  #parrafo1
+    +column(8)
+    +last
+    font-family: 'Amaranth', arial, serif
+    font-size: 140%
+    padding: 15px 15px 15px 40px
+    text-align: left
+
+  #foto
+    +column(24)
+    +last
+    padding-left: 40px
+
+  #fotol
+    +column(8)
+    +last
+    padding-left: 40px
+    
+
+  #dir
+    +column(8)
+    +last
+    font-family: 'Amaranth', arial, serif
+    font-size: 140%
+    padding: 40px 20px 20px
+
+  #mapa
+    +column(10)
+    padding: 40px 20px 20px
+
+   
+  #footer
+    +box-shadow(red 2px 2px 10px)
+    font-family: 'Amaranth', arial, serif
+    font-size: 120%
+    text-align: center
+
+
+
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+%html(lang="en")
+  %head
+    %link(href='http://fonts.googleapis.com/css?family=Amaranth&v1' rel='stylesheet' type='text/css')
+    %link(href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css")
+    %link(href="/css/print.css" media="print" rel="stylesheet" type="text/css")
+    /[if lt IE 8]
+      %link(href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css")
+
+    %link(href="/css/sipse.css" rel="stylesheet")
+    %style{:media => "all", :type => "text/css"} @import "/menu/menu_style.css";
+    /[if lt IE 7]
+      <link rel="stylesheet" type="text/css" href="/menu/includes/ie6.css" media="screen"/>
+
+  %body.bp.two-col
+    #container
+      #header
+        #header-left
+          %img{:src => "/attachments/logo.png", :alt => "SIPSE"}
+          .conformes
+            Reparación de equipos eléctricos<br/>
+          #subtit
+            Unico distribuidor autorizado en México Hawker Switchgear
+        #header-center
+          %img{:src => "/attachments/recep.png", :alt => "SIPSE"}
+          
+        #header-rigth
+          #parrafoh
+            Tel: 01(55)5877-2657<br/>
+            SIPSE S.A. de C.V.<br/>
+            Soluciones Integrales<br/>
+            Para el Sector<br/>
+            Energético S.A. de C.V.<br/>  
+
+      .menu
+        %ul
+          %li
+            %a#current{:href => "/", :target => "_self"} Inicio
+          %li
+            %a{:href => "quienes", :target => "_self"} Quienes Somos
+          %li
+            %a{:href => "productos", :target => "_self"} Productos
+            %ul
+              %li
+                %a{:href => "sistemas", :target => "_self"} Sistemas
+              %li
+                %a{:href => "consultoria", :target => "_self"} Consultoría
+              %li
+                %a{:href => "equipo", :target => "_self"} Equipo de seccionamiento
+              %li
+                %a{:href => "comunicaciones", :target => "_self"} Comunicaciones
+              %li
+                %a{:href => "potencia", :target => "_self"} Potencia
+          %li
+            %a{:href => "capacitacion", :target => "_self"} Capacitación
+          %li
+            %a{:href => "contacto", :target => "_self"} Contacto       
+           
+
+
+      #content
+        = yield
+      #footer
+        Calle Jorge Jiménez  Cantú M6 L1A Col Emiliano Zapata, Atizapán Edo. de México

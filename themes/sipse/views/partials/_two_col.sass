@@ -1,0 +1,34 @@
+// Page layout can be done using mixins applied to your semantic classes and IDs
+// For instance this layout defines a two column layout on pages with
+// a body class of "two-col".
+//
+// The markup would look like:
+//    <div id="container">
+//      <div id="header"></div>
+//      <div id="sidebar"></div>
+//      <div id="content"></div>
+//      <div id="footer"></div>
+//    </div>
+//
+// and the layout would look like:
+//    +------------------------+
+//    |        #header         |
+//    +--------+---------------+
+//    |        |               |
+//    |#sidebar|    #content   |
+//    |        |               |
+//    +------------------------+
+//    |        #footer         |
+//    +--------+---------------+
+
+body.two-col
+  #container
+    +container
+  #header, #footer, .menu
+    +column($blueprint-grid-columns)
+  #content
+    +prepend(2)   
+    +column(20)
+    +append(2)
+    +last
+
