@@ -5,3 +5,18 @@
 
 #subtit
   SIPSE  empresa que nace con el compromiso de servicio y un paradigma de satisfacción al cliente, siempre con un espíritu de superación por obtener una mejora continua. Somos el único distribuidor autorizado en México Hawker Switchgear.
+
+#slideshow
+
+:javascript
+  $(function() {
+    $('#slideshow').crossSlide({
+      sleep: 2,
+      fade: 1
+    }, [
+      { src: '/attachments/gal1.png' },
+      { src: '/attachments/gal2.png' },
+      { src: '/attachments/gal3.png' },
+      { src: '/attachments/gal4.png' }
+    ])
+  });
