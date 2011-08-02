@@ -25,7 +25,7 @@ module Nesta
     #
     # Put your assets in themes/sipse/public/sipse.
     #
-    # use Rack::Static, :urls => ["/sipse"], :root => "themes/sipse/public"
+    use Rack::Static, :urls => ["/sipse"], :root => "themes/sipse/public"
 
     helpers do
       # Add new helpers here.
