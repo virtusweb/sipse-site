@@ -1,4 +1,0 @@
-themes/sipse/views/layout.haml:          %img{:src => "/attachments/logo.png", :alt => "SIPSE"}
-themes/sipse/views/layout.haml:          %img{:src => "/attachments/recep.png", :alt => "SIPSE"}
-themes/sipse/views/sipse.sass:  background-image: url(/attachments/back.png)
-Binary file themes/sipse/views/.layout.haml.swp matches
