@@ -25,7 +25,8 @@ body.bp
     //+showgrid
     background-color: $color-container
     //height: 100%
-
+  #content
+    padding-left: 20px
   #header
     background-image: url(/sipse/images/colorh.jpg)
     background-repeat: repeat
@@ -110,17 +111,18 @@ body.bp
       background: url(/sipse/images/menu/current-bg.gif) top left repeat-x
       color: #ffffff
 
-  #uno
-    padding: 20px 10px
-    +column(8)
+ 
 
   #dos
     font-family: 'Amaranth', arial, serif
     font-size: 150%
-    color: red
     text-align: center
     padding: 40px  
     +column(8, true)
+    background-image: url("/attachments/fbien.png")
+    background-repeat: no-repeat
+    background-position: 50% 50%
+    height: 300px
 
   #tres
     font-family: 'Amaranth', arial, serif
@@ -131,14 +133,7 @@ body.bp
     +column(8, true)
     
 
-  #cuatro
-    font-family: 'Amaranth', arial, serif
-    font-size: 150%
-    color: red
-    text-align: right
-    padding: 40px  
-    +column(8, true)  
-    
+
 
   body.bp a 
     text-decoration: none 
@@ -224,5 +219,7 @@ body.bp
     text-align: center
 
   #slideshow
+    padding: 20px 10px
+    +column(8)
     width: 400px
     height: 300px
