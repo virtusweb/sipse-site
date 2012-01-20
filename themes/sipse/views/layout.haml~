@@ -41,7 +41,7 @@
           %li
             %a{:href => "quienes", :target => "_self"} Quienes Somos
           %li
-            %a{:href => "productos", :target => "_self"} Productos
+            %a{:target => "_self"} Productos
             %ul
               %li
                 %a{:href => "sistemas", :target => "_self"} Sistemas
@@ -58,7 +58,7 @@
               %li
                 %a{:href => "mejoramiento", :target => "_self"} Mejoramiento del sistema de tierras
               %li
-                %a{:href => "area", :target => "_self"} Area mecánica
+                %a{:href => "mecanica", :target => "_self"} Area mecánica
           %li
             %a{:href => "capacitacion", :target => "_self"} Capacitación
           %li
