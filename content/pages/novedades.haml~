@@ -1,0 +1,28 @@
+#tit
+  Novedades
+
+#subtit
+  Mantenimiento preventivo, reparación de equipos de potencia como son: 
+#parrafo
+  %ul
+    %li Bluetooth (clase 1) de comunicación para controles de equipo de seccionamiento, por puerto serial  y con un alcance de hasta 100 mts puerta abierta y 40 mts puerta cerrada. En versión DIN y portátil modelos: B001-08 y B02-08
+#fotol
+  %img{:src => "/attachments/novedades.png", :alt => "ARTECHE–ARTECHE"}
+
+
+    %li INTERFAZ  DE ACOPLE entre diversos tipos de tanques y controles para obtener la combinación deseada Y MUCHOS MAS;   ejemplos:
+
+#parrafo
+  ARTECHE – ARTECHE  
+#fotol
+  %img{:src => "/attachments/arteche2.png", :alt => "ARTECHE–ARTECHE"}
+
+#parrafo
+  FALCON – ARTECHE  
+#fotol
+  %img{:src => "/attachments/falcon.png", :alt => "FALCON–ARTECHE"}
+
+#parrafo
+  ARTECHE – COOPER  
+#fotol
+  %img{:src => "/attachments/artechecooper.png", :alt => "ARTECHE–COOPER"}
