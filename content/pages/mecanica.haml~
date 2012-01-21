@@ -25,7 +25,5 @@
     %li Estudio de resistencia estructural por vientos y sismos, de torres autosustentadas.
 #subtit
   Esfuerzo de la torre por sismos
-#parrafo
-  En la siguiente figura, se observa el comportamiento de la estructura a las cargas de sismos, donde tenemos un desplazamiento máximo de 12.92mm, y un esfuerzo de 5.36MPa. Este último siendo aplicado en la base de la torre.
 #foto
   %img{:src => "/attachments/mecanica.png", :alt => "Area Mecánica"}
