@@ -216,7 +216,7 @@ body.bp
     padding: 40px 20px 20px
 
   #mapa
-    +column(10)
+    +column(15)
     padding: 40px 20px 20px
 
    

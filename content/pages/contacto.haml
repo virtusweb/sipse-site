@@ -6,8 +6,54 @@
   Col. Emiliano Zapata Atizapán de Zaragoza C.P. 52918<br/>
   Estado de México<br/>
 
+
+  #hojac
+    %p Si deseas contactarte SIPSE, S.A. de C.V. para solicitar información de nuestros servicios, llena el siguiente formato.
+    %form{:action => "contacto", :method => "post"}
+      %label{:for => "empresa"} Empresa:
+      %br
+      %input{:name => "empresa", :type => "text", :size => "30"}
+      %br
+      %label{:for => "colonia"} Colonia:
+      %br
+      %input{:name => "colonia", :type => "text", :size => "30"}
+      %br
+      %label{:for => "calle"} Calle y No.:
+      %br
+      %input{:name => "calle", :type => "text", :size => "30"}
+      %br
+      %label{:for => "cp"} C.P.:
+      %br
+      %input{:name => "cp", :type => "text", :size => "30"}
+      %br
+      %label{:for => "ciudad"} Ciudad:
+      %br
+      %input{:name => "ciudad", :type => "text", :size => "30"}
+      %br
+      %label{:for => "nombre"} Nombre:
+      %br
+      %input{:name => "nombre", :type => "text", :size => "30"}
+      %br
+      %label{:for => "puesto"} Puesto:
+      %br
+      %input{:name => "puesto", :type => "text", :size => "30"}
+      %br
+      %label{:for => "telefono"} Teléfono:
+      %br
+      %input{:name => "telefono", :type => "text", :size => "30"}
+      %br
+      %label{:for => "email"} Email:
+      %br
+      %input{:name => "email", :type => "text", :size => "30"}
+      %br
+      %label{:for => "to"} Mensaje:
+      %br
+      %textarea{:cols => "40", :name => "message", :rows => "10"}
+      %br
+      %input{:type => "submit", :value => "Enviar"} 
+
 #mapa
-  %iframe{:frameborder => "0", :height => "350", :marginheight => "0", :marginwidth => "0", :scrolling => "no", :src => "http://maps.google.com/maps?f=q&source=s_q&hl=en&q=Jorge+Jim%C3%A9nez+Cant%C3%BA,+Emiliano+Zapata,+Ciudad+L%C3%B3pez+Mateos,+M%C3%A9xico,+Mexico&aq=&sll=19.603372,-99.258921&sspn=0.002936,0.004823&ie=UTF8&geocode=FWAoKwEd6GcV-g&split=0&hq=&hnear=Jorge+Jim%C3%A9nez+Cant%C3%BA,+Emiliano+Zapata,+Ciudad+L%C3%B3pez+Mateos,+M%C3%A9xico,+Mexico&t=h&ll=19.60556,-99.260445&spn=0.028299,0.025749&z=14&iwloc=A&output=embed", :width => "300"}
+  %iframe{:frameborder => "0", :height => "600", :marginheight => "0", :marginwidth => "0", :scrolling => "no", :src => "http://maps.google.com/maps?f=q&source=s_q&hl=en&q=Jorge+Jim%C3%A9nez+Cant%C3%BA,+Emiliano+Zapata,+Ciudad+L%C3%B3pez+Mateos,+M%C3%A9xico,+Mexico&aq=&sll=19.603372,-99.258921&sspn=0.002936,0.004823&ie=UTF8&geocode=FWAoKwEd6GcV-g&split=0&hq=&hnear=Jorge+Jim%C3%A9nez+Cant%C3%BA,+Emiliano+Zapata,+Ciudad+L%C3%B3pez+Mateos,+M%C3%A9xico,+Mexico&t=h&ll=19.60556,-99.260445&spn=0.028299,0.025749&z=14&iwloc=A&output=embed", :width => "500"}
   %br/
   %small
   %a{:href => "http://maps.google.com/maps?f=q&source=embed&hl=en&q=Jorge+Jim%C3%A9nez+Cant%C3%BA,+Emiliano+Zapata,+Ciudad+L%C3%B3pez+Mateos,+M%C3%A9xico,+Mexico&aq=&sll=19.603372,-99.258921&sspn=0.002936,0.004823&ie=UTF8&geocode=FWAoKwEd6GcV-g&split=0&hq=&hnear=Jorge+Jim%C3%A9nez+Cant%C3%BA,+Emiliano+Zapata,+Ciudad+L%C3%B3pez+Mateos,+M%C3%A9xico,+Mexico&t=h&ll=19.60556,-99.260445&spn=0.028299,0.025749&z=14&iwloc=A", :style => "color:#0000FF;text-align:left"}> View Larger Map
