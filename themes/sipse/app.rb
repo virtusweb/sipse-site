@@ -33,7 +33,7 @@ module Nesta
       require 'pony'
       Pony.mail(
         :from => params[:name] + "<" + params[:email] + ">",
-        :to => "maribel.garcia.glez@gmail.com",
+        :to => "info@sipsemx.com",
         :subject => "Forma de contacto",
         :body => params[:message],
         :port => '587',
@@ -48,10 +48,10 @@ module Nesta
         }
       )
       Pony.mail(
-        :from => "Mundo Real Idiomas <info@mundorealidiomas.com.mx>",
+        :from => "SIPSE <info@sipsemx.com>",
         :to => params[:email],
-        :subject => "Respuesta de Mundo Real Idiomas",
-        :body => "Agradecemos mucho su interés en Mundo Real Idiomas en breve recibirá una respuesta por parte de uno de nuestros ejecutivos. www.mundorealidiomas.com.mx",
+        :subject => "Respuesta de SIPSE",
+        :body => "Agradecemos mucho su interés en SIPSE. En breve recibirá una respuesta por parte de uno de nuestros ejecutivos. www.sipsemx.com",
         :port => '587',
         :via => :smtp,
         :via_options => {
