@@ -31,11 +31,16 @@ module Nesta
 
     post '/contacto' do
       require 'pony'
+      message = ""
+      params.each_pair do |key, value|
+        message << "#{key}: #{value}\n"
+      end
+      puts message
       Pony.mail(
         :from => params[:nombre] + "<" + params[:email] + ">",
         :to => "info@sipsemx.com",
         :subject => "Forma de contacto",
-        :body => params[:message],
+        :body => message,
         :port => '587',
         :via => :smtp,
         :via_options => {
