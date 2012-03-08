@@ -32,7 +32,7 @@ module Nesta
     post '/contacto' do
       require 'pony'
       Pony.mail(
-        :from => params[:name] + "<" + params[:email] + ">",
+        :from => params[:nombre] + "<" + params[:email] + ">",
         :to => "info@sipsemx.com",
         :subject => "Forma de contacto",
         :body => params[:message],
